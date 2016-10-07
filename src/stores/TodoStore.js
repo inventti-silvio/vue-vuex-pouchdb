@@ -2,7 +2,7 @@ import Vue from 'vue';
 import Vuex from 'vuex';
 import PouchDB from 'pouchdb';
 const db = new PouchDB('todos');
-PouchDB.sync('todos', 'http://104.236.45.201:5984/todos', {live:true});
+PouchDB.sync('todos', 'http://45.55.226.255:5984/todos/', {live:true});
 
 Vue.use(Vuex);
 
